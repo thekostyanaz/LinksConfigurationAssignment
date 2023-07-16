@@ -1,0 +1,26 @@
+﻿@{
+	ViewBag.Title = "Home";
+}
+
+<div class="container margin-top">
+	<div class="flex padding-left">
+		<div class="box text-center">
+			<a href="@ViewBag.FacebookLink">Facebook</a>
+		</div>
+
+		<environment exclude="Development">
+			<div class="box text-center">
+				<a href="@ViewBag.InstagramLink">Instagram</a>
+			</div>
+		</environment>
+
+		<div class="box text-center">
+			<a href="@ViewBag.TwitterLink">Twitter</a>
+		</div>
+
+		<div class="box text-center">
+			<a href="@ViewBag.YoutubeLink">Youtube</a>
+		</div>
+
+	</div>
+</div>
